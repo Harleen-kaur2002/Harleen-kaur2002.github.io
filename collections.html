@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Iconic Jewellers</title>
+  
+    <link rel="stylesheet" href="./styles/pageStyles/listing.css" />
+  </head>
+  <body>
+    <!-- *drawer  -->
+    <aside id="drawer" class="drawer-inactive">
+      <a href="index.html"><i class="fa-solid fa-home"></i>Home</a>
+      <a href="collections.html"
+        ><i class="fa-solid fa-database"></i>Collections</a
+      >
+      <a href="contactUs.html"><i class="fa-solid fa-tty"></i>Contact Us</a>
+      <a href="about.html"><i class="fa-solid fa-user"></i>About</a>
+    </aside>
+
+    <!-- *navbar  -->
+    <nav>
+      <span id="brand">Iconic Jewellers</span>
+      <button id="menu-btn" onclick="drawerToggle()">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <div>
+        <a href="index.html"><i class="fa-solid fa-home"></i>Home</a>
+        <a href="collections.html"><i class="fa-solid fa-database"></i>Collections</a>
+        <a href="contactUs.html"><i class="fa-solid fa-tty"></i>Contact Us</a>
+        <a href="about.html"><i class="fa-solid fa-user"></i>About</a>
+      </div>
+    </nav>
+
+    <main>
+      <!-- *collections -->
+      <h1 class="collection-heading">Collections</h1>
+
+      <!-- *category data will be inserted here -->
+      <section class="category-cards" id="collection"></section>
+
+      <!-- * individual Items -->
+
+      <a id="pendantsCollectionLink" />
+      <h1 class="collection-heading">Pentants</h1>
+      <div class="category-cards" id="pendants">
+        <!-- *pendants data will be inserted here -->
+      </div>
+
+      <a id="ringsCollectionLink" />
+      <h1 class="collection-heading">Rings</h1>
+
+      <div class="category-cards" id="rings">
+        <!-- *rings data will be inserted -->
+      </div>
+
+      <a id="necklacesCollectionLink" />
+
+      <h1 class="collection-heading">Necklace</h1>
+
+      <div class="category-cards" id="necklaces">
+        <!-- *necklace data will be inserted -->
+      </div>
+
+      <a id="earringsCollectionLink" />
+      <h1 class="collection-heading">Earrings</h1>
+
+      <div class="category-cards" id="earrings">
+        <!-- * earring data will be inserted here  -->
+      </div>
+    </main>
+
+    <!-- *footer  -->
+    <footer>
+      <section>
+        <section>
+          <h2>Useful Links</h2>
+          <ul>
+            <li><i class="fa fa-solid fa-home"></i><a href="">Home</a></li>
+            <li>
+              <i class="fa fa-solid fa-database"></i> <i class=""></i>
+              <a href="">Collections</a>
+            </li>
+            <li><i class="fa fa-solid fa-tty"></i><a href="">Contact Us</a></li>
+            <li><i class="fa fa-solid fa-user"></i><a href="">About</a></li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Collections</h2>
+          <ul>
+            <li>
+              <i class="fa-solid fa-chevron-right"></i><a href="">Bangels</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-chevron-right"></i><a href="">Rings</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-chevron-right"></i><a href="">Contact Us</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-chevron-right"></i><a href="">About</a>
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Contact Us</h2>
+          <ul>
+            <li><i class="fa-solid fa-envelope"></i>Email Me</li>
+            <li><i class="fa-solid fa-phone"></i>+12349238729</li>
+            <li><i class="fa-solid fa-location"></i>New Westminister</li>
+          </ul>
+        </section>
+      </section>
+
+      <div class="copyright-txt">
+        © 2024 Titan Company Limited. All Rights Reserved.
+      </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+    <script src="./js/loadData.js"></script>
+    <script src="./js/loadCollectionData.js"></script>
+
+
+    <script
+      src="https://kit.fontawesome.com/265a92e85a.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

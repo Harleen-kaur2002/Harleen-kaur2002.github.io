@@ -1,0 +1,110 @@
+/* *navigation bar css code  */
+nav {
+    background-color: var(--primary-color);
+    min-height: 6rem;
+    padding: 0 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--font-color);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 0 5px var(--box-shadow-light);
+
+
+    /* animation: FadeTopIn 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards; */
+}
+
+
+#brand {
+    font-size: xx-large;
+    text-transform: capitalize;
+    /* font-family: "Playwrite AU QLD", cursive; */
+    font-family: "Great Vibes", cursive;
+    font-size: 2.4rem;
+    font-weight: 900;
+    padding: 1.5rem 0;
+}
+
+
+nav>div {
+    display: flex;
+    column-gap: 2.6rem;
+}
+
+
+nav>div>a {
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+    display: flex;
+    column-gap: 0.3rem;
+    align-items: center;
+}
+
+nav>div>a>i {
+    font-size: 1rem;
+}
+
+
+
+nav>div>a:hover,
+#menu-btn:hover {
+    transform: scale(1.14);
+    transition: transform 0.4s ease-in;
+}
+
+nav>div>a::after {
+    content: " ";
+    height: 2px;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 0;
+    background-color: var(--font-color);
+    transition: width 0.5s ease-in;
+}
+
+
+
+nav>div>a:hover::after {
+    width: 100%;
+}
+
+#menu-btn {
+    border: none;
+    background-color: inherit;
+    color: var(--font-color);
+    font-size: 1.4rem;
+    cursor: pointer;
+    display: none;
+}
+
+
+
+/* *responsive design */
+@media screen and (max-width:900px) {
+
+    nav {
+        padding: 0 2rem;
+    }
+
+    nav>div {
+        display: none;
+    }
+
+
+
+    #brand {
+        font-size: larger;
+    }
+
+    #menu-btn {
+        display: initial;
+    }
+}

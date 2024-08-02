@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+AU+QLD:wght@100..400&display=swap');
+
+
+
+
+/* *css variables */
+:root { 
+    --primary-color: #733030;
+    --font-color-dark:#b23838;
+    --font-color:  #ffe6e6  ;
+    --font-color-inital-lg:#777777;
+    --background-color: #fff;
+    --box-shadow-light: #5555558c;
+    --hover-effect-light: #97313125;
+    --drawer-wd:16rem;
+}
+
+
+
+
+/* * properties applied to all */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+    scroll-behavior: smooth !important;
+}
+
+/* *body properties */
+body{
+    position: relative;
+}
+
+
+
+
+
+

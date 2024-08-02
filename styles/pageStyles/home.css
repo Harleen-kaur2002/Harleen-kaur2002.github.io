@@ -1,0 +1,92 @@
+@import url("../main.css");
+@import url("../componentStyles/navbar.css");
+@import url("../componentStyles/cards.css");
+@import url("../componentStyles/drawer.css");
+@import url("../componentStyles/slider.css");
+@import url("../componentStyles/footer.css");
+@import url("../componentStyles/animation.css");
+
+
+
+main {
+
+    min-height: 90vh;
+}
+
+
+/* *side or contact us cards  */
+.side-card {
+    padding: 0.2rem 1rem;
+    background-color: #ffe6e631;
+    width: 22rem;
+    height: 10rem;
+    display: grid;
+    grid-template-columns: 5fr 3fr;
+    border-radius: 5px;
+    box-shadow: 0 0 3px var(--box-shadow-light);
+    overflow: hidden;
+    animation: FadeBottomIn 1s ;
+    animation-fill-mode: forwards;
+    animation-iteration-count:1;
+    position: relative;
+    animation-delay: 0;
+}
+
+
+
+
+.side-card>div>h1 {
+    color: var(--font-color-dark);
+    font-size: 1.7rem;
+    padding-bottom: 0.8rem;
+}
+
+
+.side-card>div:first-child {
+    display: grid;
+    justify-items: start;
+    align-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.side-card>div>button {
+    padding: 0.5rem 0;
+    border-radius: 2px;
+    border: none;
+    background-color: var(--primary-color);
+    color:var(--font-color);
+    font-weight: 600;
+    cursor: pointer;
+    display:flex;
+    column-gap: 0.2rem;
+    align-items: center;
+    width: 7rem;
+    justify-content: center;
+    transition: width 0.4s ease-in,padding 0.4s ease-in, justify-content 0.4s ease-in;
+
+}
+
+.side-card>div>button:hover{
+    width: 100%;
+    padding:0.5rem 0.8rem;
+    justify-content: space-between;
+  
+
+}
+
+
+
+
+.side-card-img-wrapper {
+    overflow: hidden;
+    display: grid;
+    align-content: center;
+}
+
+.side-card-img-wrapper>i {
+    font-size: 4.4rem;
+    color:var(--font-color-dark);
+}

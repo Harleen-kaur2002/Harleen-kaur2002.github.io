@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Iconic Jewellers</title>
+    
+    <link rel="stylesheet" href="./styles/pageStyles/contactUs.css" />
+  </head>
+  <body>
+    <!-- *drawer  -->
+    <aside id="drawer" class="drawer-inactive">
+      <a href="index.html"><i class="fa-solid fa-home"></i>Home</a>
+      <a href="collections.html"
+        ><i class="fa-solid fa-database"></i>Collections</a
+      >
+      <a href="contactUs.html"><i class="fa-solid fa-tty"></i>Contact Us</a>
+      <a href="about.html"><i class="fa-solid fa-user"></i>About</a>
+    </aside>
+
+    <!-- *navbar  -->
+    <nav>
+      <span id="brand">Iconic Jewellers</span>
+      <button id="menu-btn" onclick="drawerToggle()">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <div>
+        <a href="index.html"><i class="fa-solid fa-home"></i>Home</a>
+        <a href="collections.html"
+          ><i class="fa-solid fa-database"></i>Collections</a
+        >
+        <a href="contactUs.html"><i class="fa-solid fa-tty"></i>Contact Us</a>
+        <a href="about.html"><i class="fa-solid fa-user"></i>About</a>
+      </div>
+    </nav>
+
+    <!-- *main page content -->
+    <main>
+      <!-- *page cover -->
+      <div class="cover">
+        <h1>Contact Us</h1>
+        <img src="./img/front2.jpg" alt="" srcset="" />
+      </div>
+
+      <!-- * map and form container  -->
+      <div class="contact-us-info-wrapper">
+        <div>
+          <!-- *map -->
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20854.262632189628!2d-122.91370298436149!3d49.204679219158585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5485d871f5ee4dc9%3A0xf3a710065f3a2f3f!2sDouglas%20College%2C%20New%20Westminster%20Campus!5e0!3m2!1sen!2sca!4v1721777191183!5m2!1sen!2sca"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        <!-- *Form -->
+        <form id="appointment-form" method="post" action="https://formspree.io/f/myzgyboj" >
+          <h1>
+            Book An<br />
+            Appointment
+          </h1>
+          <div>
+            <label for="fname">First Name</label>
+            <input type="text" name="fname" required/>
+            <small id="fname-error"></small>
+          </div>
+          <div>
+            <label for="lname">Last Name</label>
+            <input type="text" name="lname" required/>
+            <small id="lname-error"></small>
+          </div>
+
+          <div>
+            <label for="email">Email</label>
+            <input type="text" name="email" required/>
+            <small id="email-error"></small>
+          </div>
+
+          <div>
+            <label for="phone">Phone Number</label>
+            <input type="text" name="phone" required/>
+            <small id="phone-error"></small>
+          </div>
+
+          <div>
+            <label for="message">Message</label>
+            <textarea rows="5" type="text" name="message"></textarea>
+            <small id="message-error"></small>
+          </div>
+          <section>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+          </section>
+        </form>
+      </div>
+    </main>
+
+    <!-- *footer  -->
+    <footer>
+      <section>
+        <section>
+          <h2>Useful Links</h2>
+          <ul>
+            <li><i class="fa fa-solid fa-home"></i><a href="">Home</a></li>
+            <li>
+              <i class="fa fa-solid fa-database"></i> <i class=""></i>
+              <a href="">Collections</a>
+            </li>
+            <li><i class="fa fa-solid fa-tty"></i><a href="">Contact Us</a></li>
+            <li><i class="fa fa-solid fa-user"></i><a href="">About</a></li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Collections</h2>
+          <ul>
+            <li>
+              <i class="fa-solid fa-chevron-right"></i><a href="">Bangels</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-chevron-right"></i><a href="">Rings</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-chevron-right"></i><a href="">Contact Us</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-chevron-right"></i><a href="">About</a>
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Contact Us</h2>
+          <ul>
+            <li><i class="fa-solid fa-envelope"></i>Email Me</li>
+            <li><i class="fa-solid fa-phone"></i>+12349238729</li>
+            <li><i class="fa-solid fa-location"></i>New Westminister</li>
+          </ul>
+        </section>
+      </section>
+
+      <div class="copyright-txt">
+        © 2024 Titan Company Limited. All Rights Reserved.
+      </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+
+    <script
+      src="https://kit.fontawesome.com/265a92e85a.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

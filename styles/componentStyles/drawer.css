@@ -1,0 +1,52 @@
+/* *Drawer Code */
+#drawer {
+    display: grid;
+    overflow: hidden;
+    position: fixed;
+    left: 0;
+    height: 100vh;
+    background-color: var(--background-color);
+    transition: left 0.6s ease-out;
+    box-shadow: 0 0 5px var(--box-shadow-light);
+    z-index: 200;
+    align-content: start;
+    padding: 2rem 0.5rem;
+    width: 15rem;
+}
+
+.drawer-inactive {
+    left: -15rem !important;
+}
+
+
+
+.drawer-active {
+    left: 0 !important;
+}
+
+
+#drawer>a {
+    display: block;
+    padding: 0.8rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    color: var(--font-color-dark);
+    display: flex;
+    column-gap: 0.3rem;
+    transition: transform 0.3s ease-in;
+}
+
+#drawer>a:hover {
+    background-color: var(--hover-effect-light);
+    transform: translateX(10px);
+}
+
+
+
+/* *responsive code */
+@media screen and (min-width:900px) {
+    #drawer {
+        left: -15rem !important;
+
+    }
+}

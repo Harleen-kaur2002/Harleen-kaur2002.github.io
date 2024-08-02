@@ -1,0 +1,126 @@
+@import url("../main.css");
+@import url("../componentStyles/navbar.css");
+@import url("../componentStyles/drawer.css");
+@import url("../componentStyles/cover.css");
+@import url("../componentStyles/animation.css");
+
+
+@import url("../componentStyles/slider.css");
+@import url("../componentStyles/footer.css");
+
+
+
+
+
+/* *contact us page designs */
+main {
+    min-height: 90vh;
+}
+
+
+.contact-us-info-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* border:2px solid red; */
+    padding: 4rem 8rem;
+    gap: 2rem;
+}
+
+
+.contact-us-info-wrapper>div {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.contact-us-info-wrapper>div>iframe {
+    width: 100%;
+    height: 100%;
+}
+
+
+.contact-us-info-wrapper>form {
+    /* border:2px solid blue; */
+    display: grid;
+    gap: 0.5rem;
+    padding: 0;
+}
+
+
+form>h1 {
+    padding-bottom: 1rem;
+    color: var(--font-color-dark);
+
+    /* text-align: center; */
+}
+
+
+form>div>label {
+    display: block;
+
+}
+
+
+
+
+form>div>input,
+form>div>textarea {
+    width: 100%;
+    border: 1px solid #959595;
+    outline: none;
+    padding: 0rem 0.5rem;
+    /* resize: none; */
+    font-size: 1rem;
+    min-height: 2.7rem;
+    border-radius: 3px;
+}
+
+form>textarea {
+    height: 10rem;
+
+    width: 100%;
+}
+
+
+form>section {
+    display: flex;
+    gap: 2rem;
+}
+
+form>section>button {
+    padding: 0.8rem 1.8rem;
+    color: var(--font-color);
+    border: 0;
+    text-transform: uppercase;
+
+    border-radius: 3px;
+    box-shadow: 0 0 2px var(--box-shadow-light);
+    background-color: var(--primary-color);
+    cursor: pointer;
+    transition: transform 0.3s ease-in;
+
+
+}
+
+
+form>section>button:hover {
+    transform: scale(1.1);
+}
+
+
+
+/* *responsive design */
+@media screen and (max-width:900px) {
+    .contact-us-info-wrapper {
+        grid-template-columns: 1fr;
+        padding: 4rem 2rem;
+
+    }
+
+
+    .contact-us-info-wrapper>div {
+        min-height: 25rem;
+        border-radius:5px;
+    }
+
+}

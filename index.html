@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/pageStyles/home.css" />
+
+    <script
+      src="https://kit.fontawesome.com/265a92e85a.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Iconic Jewellers</title>
+  </head>
+  <body>
+    <!-- *drawer  -->
+    <aside id="drawer" class="drawer-inactive">
+      <a href="index.html"><i class="fa-solid fa-home"></i>Home</a>
+      <a href="collections.html"
+        ><i class="fa-solid fa-database"></i>Collections</a
+      >
+      <a href="contactUs.html"><i class="fa-solid fa-tty"></i>Contact Us</a>
+      <a href="about.html"><i class="fa-solid fa-user"></i>About</a>
+    </aside>
+
+    <!-- *navbar  -->
+    <nav>
+      <span id="brand">Iconic Jewellers</span>
+      <button id="menu-btn" onclick="drawerToggle()">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <div>
+        <a href="index.html"><i class="fa-solid fa-home"></i>Home</a>
+        <a href="collections.html"
+          ><i class="fa-solid fa-database"></i>Collections</a
+        >
+        <a href="contactUs.html"><i class="fa-solid fa-tty"></i>Contact Us</a>
+        <a href="about.html"><i class="fa-solid fa-user"></i>About</a>
+      </div>
+    </nav>
+
+    <!-- *slider  -->
+    <main>
+      <section id="slider">
+        <section id="slides">
+          <div class="slide">
+            <img src="./img/front2.jpg" alt="loadding.." />
+          </div>
+          <div class="slide">
+            <img src="./img/front3.jpg" alt="loadding.." />
+          </div>
+          <div class="slide">
+            <img src="./img/front2.jpg" alt="loadding.." />
+          </div>
+        </section>
+        <button class="left" onclick="slideLeft()">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <button class="right" onclick="slideRight()">
+          <p><i class="fa-solid fa-chevron-right"></i></p>
+        </button>
+      </section>
+    </main>
+
+    <!-- *collections -->
+    <div class="category-cards-wrapper">
+      <h1>Shop by Collections</h1>
+
+      <p>Browse through your favorite categories. We've got them all!</p>
+      <section class="category-cards" id="collection">
+        
+      </section>
+    </div>
+
+
+
+    <!--*Item Listing  -->
+
+    <div class="items-cards-wrapper">
+      <h1>Popular packs</h1>
+
+      <p>Browse through hot picks designed for you. We've got them all!</p>
+      <section class="item-cards" id="hotPicks">
+       
+
+       <!-- * loadding hotPick -->
+      </section>
+    </div>
+
+
+
+<!-- *CONTACT US LINKS  -->
+    <div class="items-cards-wrapper">
+      <h1>Connect With Us</h1>
+      <p>We are always available to guide you at your convenience.</p>
+      <section class="contact-cards-wrapper">
+        <div class="side-card">
+          <div>
+            <p>Connect On</p>
+            <h1>WhatsApp</h1>
+            <button>
+              <span>Connect</span> <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+          <div class="side-card-img-wrapper">
+            <i class="fa-brands fa-whatsapp"></i>
+          </div>
+        </div>
+
+        <div class="side-card">
+          <div>
+            <p>Book An</p>
+            <h1>Appointment</h1>
+            <button>
+              <span>Connect</span> <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+          <div class="side-card-img-wrapper">
+            <i class="fa-regular fa-calendar-check"></i>
+          </div>
+        </div>
+
+        <div class="side-card">
+          <div>
+            <p>Visit us</p>
+            <h1>Address</h1>
+            <button>
+              <span>Connect</span> <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+          <div class="side-card-img-wrapper">
+            <i class="fa-solid fa-location-crosshairs"></i>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- *footer  -->
+    <footer>
+      <section>
+        <section>
+          <h2>Useful Links</h2>
+          <ul>
+            <li><i class="fa fa-solid fa-home"></i><a href="">Home</a></li>
+            <li>
+              <i class="fa fa-solid fa-database"></i> <i class=""></i>
+              <a href="">Collections</a>
+            </li>
+            <li><i class="fa fa-solid fa-tty"></i><a href="">Contact Us</a></li>
+            <li><i class="fa fa-solid fa-user"></i><a href="">About</a></li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Collections</h2>
+          <ul>
+            <li>
+              <i class="fa-solid fa-chevron-right"></i><a href="">Bangels</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-chevron-right"></i><a href="">Rings</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-chevron-right"></i><a href="">Contact Us</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-chevron-right"></i><a href="">About</a>
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Contact Us</h2>
+          <ul>
+            <li><i class="fa-solid fa-envelope"></i>Email Me</li>
+            <li><i class="fa-solid fa-phone"></i>+12349238729</li>
+            <li><i class="fa-solid fa-location"></i>New Westminister</li>
+          </ul>
+        </section>
+      </section>
+
+      <div class="copyright-txt">
+        © 2024 Iconic Jewellers Limited. All Rights Reserved.
+      </div>
+    </footer>
+    
+    <script src="./js/loadCollectionData.js"></script>
+    <script src="./js/hotPicksData.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
